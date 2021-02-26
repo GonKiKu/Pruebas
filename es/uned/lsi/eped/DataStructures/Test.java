@@ -66,7 +66,7 @@ public class Test {
 			System.out.print(iteratorList.getNext()+" ");
 		}
 		
-		/*
+		/*hola
 		 //Test operaciones sobre pilas
 		System.out.println("Test de operaciones sobre pilas");
 		Stack<Integer> stack = new Stack<Integer>();
