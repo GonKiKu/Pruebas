@@ -4,8 +4,8 @@ public class Test {
 
 	
 	  public static void main(String [] args) throws Exception{
-		  		  
-		/* Test operaciones sobre listas */ 
+		/*  		  
+		//Test operaciones sobre listas 
 		System.out.println("Test de operaciones sobre listas");
 		List<Integer> L = new List<Integer>();
 		L.insert(1, 1);
@@ -64,9 +64,9 @@ public class Test {
 		iteratorList = L.iterator();
 		while(iteratorList.hasNext()){
 			System.out.print(iteratorList.getNext()+" ");
-		}
+		}*/
 		
-		/*hola funccio
+		
 		 //Test operaciones sobre pilas
 		System.out.println("Test de operaciones sobre pilas");
 		Stack<Integer> stack = new Stack<Integer>();
@@ -81,7 +81,7 @@ public class Test {
 			System.out.print(iteratorStack.getNext()+" ");
 		}
 		System.out.println();
-		System.out.println("Tamaï¿½o pila:"+stack.size());		
+		System.out.println("Tamaño pila:"+stack.size());		
 		System.out.println("contains(3):"+stack.contains(3));
 		System.out.println("contains(9):"+stack.contains(9));		
 		System.out.println("Recorrido copia de la pila mediante iterador:");		
@@ -105,6 +105,8 @@ public class Test {
 		System.out.println("Cima: "+stack.getTop());
 		stack.pop();
 		System.out.println("isEmpty? "+stack.isEmpty());
+		
+		/*
 		
 		//Test operaciones colas//
 		System.out.println("Test de operaciones sobre colas");
