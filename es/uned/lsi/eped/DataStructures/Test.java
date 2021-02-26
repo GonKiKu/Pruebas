@@ -15,9 +15,9 @@ public class Test {
 		L.insert(5, 5);
 		L.insert(6, 6);
 		L.set(5, 10);
-		L.insert(10,1);
-		L.insert(11,2);
-		L.insert(19,9);
+		L.insert(7,7);
+		L.insert(8,8);
+		L.insert(9,9);
 		System.out.print("Recorrido copia de la lista mediante iterador: ");
 		ListIF<Integer> copyList = new List<Integer>(L);
 		System.out.println(copyList.size()+" elementos.");
@@ -26,23 +26,23 @@ public class Test {
 			  System.out.print(iteratorListCopy.getNext()+" ");
 		}
 		System.out.println();		  
-		System.out.println("Elemento en la posiciï¿½n 2: "+L.get(2));		  
-		System.out.println("Tamaï¿½o de la lista: "+L.size());	
-		System.out.println("Eliminar elemento en la posiciï¿½n 9: ");			  
+		System.out.println("Elemento en la posición 2: "+L.get(2));		  
+		System.out.println("Tamaño de la lista: "+L.size());	
+		System.out.println("Eliminar elemento en la posición 9: ");			  
 		L.remove(9);
 		IteratorIF<Integer> iteratorList = L.iterator();
 		while(iteratorList.hasNext()){
 			  System.out.print(iteratorList.getNext()+" ");
 		}
 		System.out.println();		  
-		System.out.println("Eliminar elemento en la posiciï¿½n 1: ");			  
+		System.out.println("Eliminar elemento en la posición 1: ");			  
 		L.remove(1);
 		iteratorList = L.iterator();
 		while(iteratorList.hasNext()){
 			  System.out.print(iteratorList.getNext()+" ");
 		}
 		System.out.println();		  
-		System.out.println("Eliminar elemento en la posiciï¿½n 4: ");			  
+		System.out.println("Eliminar elemento en la posición 4: ");			  
 		L.remove(4);
 		iteratorList = L.iterator();
 		while(iteratorList.hasNext()){
@@ -57,7 +57,7 @@ public class Test {
 			System.out.print(iteratorList.getNext()+" ");
 		}
 		System.out.println();		  
-		System.out.println("Tamaï¿½o de la lista: "+L.size());	
+		System.out.println("Tamaño de la lista: "+L.size());	
 		System.out.println("Aplicar clear");
 		L.clear();
 		System.out.println("isEmpty? "+L.isEmpty());
@@ -66,7 +66,8 @@ public class Test {
 			System.out.print(iteratorList.getNext()+" ");
 		}
 		
-		/*Test operaciones sobre pilas*/
+		/*
+		 //Test operaciones sobre pilas
 		System.out.println("Test de operaciones sobre pilas");
 		Stack<Integer> stack = new Stack<Integer>();
 		stack.push(1);
@@ -105,7 +106,7 @@ public class Test {
 		stack.pop();
 		System.out.println("isEmpty? "+stack.isEmpty());
 		
-		/*Test operaciones colas*/
+		//Test operaciones colas//
 		System.out.println("Test de operaciones sobre colas");
 		Queue<Integer> queue = new Queue<Integer>();
 		queue.enqueue(1);
@@ -142,11 +143,10 @@ public class Test {
 		queue.dequeue();
 		System.out.println("isEmpty?: "+queue.isEmpty());
 		
-		/*Test operaciones sobre ï¿½rboles binarios*/
-		/*
-		Ejemplo extraido de Wikipedia:
-		Link: https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles
-		*/
+		//Test operaciones sobre ï¿½rboles binarios
+		
+		//Ejemplo extraido de Wikipedia:
+		//Link: https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles
 		//
 		System.out.println("Test de operaciones sobre Ã¡rboles binarios");
 		BTree<String> btree = new BTree<String>();
@@ -218,7 +218,7 @@ public class Test {
 		}
 		System.out.println();
 		
-		/*Test operaciones sobre ï¿½rboles generales*/
+		//Test operaciones sobre ï¿½rboles generales
 		System.out.println("Test de operaciones sobre Ã¡rboles generales");
 		GTreeIF<Integer> gtree = new GTree<Integer>();
 		gtree.setRoot(1);
@@ -284,7 +284,9 @@ public class Test {
 			System.out.print(iterBreadthGTree.getNext()+" ");
 		}
 		System.out.println();
+		*/
 	 }
+	  
 	
 	
 	
